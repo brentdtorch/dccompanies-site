@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <title>Request services — DC Companies</title>
+  <meta name="description" content="Request services from DC Companies LLC. Tell us the unit, location, timeline, and the real ask. We reply from brent@dccompanies.net." />
+  <meta name="theme-color" content="#161410" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23b34a22'/><text x='50' y='70' font-size='56' font-family='Georgia' font-weight='bold' text-anchor='middle' fill='%23fffdf8'>DC</text></svg>" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark">DC</span>
+        <span class="brand-name">DC&nbsp;Companies</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span></label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/#units">Units</a>
+        <a href="/mv-sales.html">MV Sales</a>
+        <a href="/request.html" class="nav-cta">Request services</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero legal-hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Help desk · Folsom, Louisiana</div>
+        <h1>Request <span class="accent">services</span></h1>
+        <p class="lede">
+          Capture the real request. We route it with context and reply from
+          <a href="mailto:brent@dccompanies.net" style="color:#e8b297;text-decoration:underline">brent@dccompanies.net</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap desk">
+        <aside class="aside">
+          <div class="kicker">How this works</div>
+          <h2>The first step of the standard.</h2>
+          <p>This page is how we record the original ask — verbatim — so the job does not start as a telephone game.</p>
+          <ol>
+            <li>You send the request.</li>
+            <li>It lands in email for Brent.</li>
+            <li>We reply from brent@dccompanies.net.</li>
+          </ol>
+          <p>Prefer email only? Write <a href="mailto:brent@dccompanies.net">brent@dccompanies.net</a>.</p>
+        </aside>
+
+        <div class="ticket">
+          <div class="ticket-head">
+            <h2>Work request</h2>
+            <p>Seven fields. No account.</p>
+          </div>
+          <form id="request-form" action="https://formsubmit.co/brent@dccompanies.net" method="POST">
+            <input type="hidden" name="_subject" value="Service request — DC Companies" />
+            <input type="hidden" name="_next" value="https://dccompanies.net/request-thanks.html" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_url" value="https://dccompanies.net/request.html" />
+            <input type="hidden" name="_autoresponse" value="We received your service request for DC Companies LLC. We will reply from brent@dccompanies.net. If you need to add detail, write that address. This is a confirmation of your request, not marketing." />
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-grid">
+              <div>
+                <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input id="name" name="Name" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="form-grid row-2">
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="Phone" type="tel" autocomplete="tel" />
+                </div>
+              </div>
+              <p id="contact-hint" class="hint">Email or phone — we need at least one so we can reply. Auto-reply needs email.</p>
+
+              <div>
+                <label for="unit">Unit / service <span class="req" aria-hidden="true">*</span></label>
+                <select id="unit" name="Unit" required>
+                  <option value="" disabled selected>Select a unit</option>
+                  <option value="Custom Application Development">Custom Application Development</option>
+                  <option value="Project Management &amp; Project Controls">Project Management &amp; Project Controls</option>
+                  <option value="Industrial Small Tool &amp; Consumable Drop Shipping">Industrial Small Tool &amp; Consumable Drop Shipping</option>
+                  <option value="AI Business Solutions">AI Business Solutions</option>
+                  <option value="MV Sales">MV Sales</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-grid row-2">
+                <div>
+                  <label for="location">Location <span class="req" aria-hidden="true">*</span></label>
+                  <input id="location" name="Location" type="text" required placeholder="Job site, city, or remote" />
+                </div>
+                <div>
+                  <label for="timeline">Timeline <span class="req" aria-hidden="true">*</span></label>
+                  <select id="timeline" name="Timeline" required>
+                    <option value="" disabled selected>Select a timeline</option>
+                    <option>This week</option>
+                    <option>This month</option>
+                    <option>Planning ahead</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="details">Details <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="details" name="Details" rows="6" required placeholder="The original ask, as plainly as you can write it."></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg">Request services</button>
+                <a class="btn btn-ink" href="mailto:brent@dccompanies.net">Email instead</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-mark">DC</span>
+          <span>DC Companies LLC</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/#units">Units</a>
+          <a href="/request.html">Request services</a>
+          <a href="/mv-sales.html">MV Sales</a>
+        </nav>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="/terms.html">Terms</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/sms-opt-in.html">SMS Opt-In</a>
+        </nav>
+      </div>
+      <p class="footer-sms">
+        Informational texts from 844-526-4892. Not marketing.
+        Text START, then Y to opt in. STOP to opt out. HELP for help.
+        <a href="/sms-opt-in.html">SMS details</a>
+      </p>
+      <div class="footer-meta">
+        <span>Folsom, Louisiana</span>
+        <span>Family-owned</span>
+        <span>Veteran-owned</span>
+        <span>© 2026 DC Companies LLC</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var form = document.getElementById("request-form");
+      if (!form) return;
+      var email = form.elements.email;
+      var phone = form.elements.Phone;
+      var unit = form.elements.Unit;
+      var hint = document.getElementById("contact-hint");
+      var params = new URLSearchParams(window.location.search);
+      var slugs = {
+        app: "Custom Application Development",
+        pm: "Project Management & Project Controls",
+        supply: "Industrial Small Tool & Consumable Drop Shipping",
+        ai: "AI Business Solutions",
+        mv: "MV Sales",
+        other: "Other"
+      };
+      var preset = params.get("unit");
+      if (preset && unit) {
+        var mapped = slugs[preset] || preset;
+        for (var i = 0; i < unit.options.length; i++) {
+          if (unit.options[i].value === mapped || unit.options[i].text === mapped) {
+            unit.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      form.addEventListener("submit", function (e) {
+        var hasEmail = email.value.replace(/\s/g, "") !== "";
+        var hasPhone = phone.value.replace(/\s/g, "") !== "";
+        if (!hasEmail && !hasPhone) {
+          e.preventDefault();
+          hint.classList.add("error");
+          hint.textContent = "Add an email or a phone number so we can reply.";
+          email.focus();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
