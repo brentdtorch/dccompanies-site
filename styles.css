@@ -519,6 +519,59 @@ input:hover, select:hover, textarea:hover { border-color: #b0a78f; }
   font-size: 0.82rem;
 }
 
+/* PARLEY */
+.not-list {
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+  max-width: 40rem;
+}
+.not-list li {
+  padding: 0.85rem 1.05rem;
+  background: var(--night-2);
+  border: 1px solid var(--night-line);
+  border-left: 2px solid #e8b297;
+  border-radius: 10px;
+  color: #cfc6b4;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+.price-box {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.55rem 1.45rem 1.5rem;
+  max-width: 34rem;
+  box-shadow: 0 10px 30px -24px rgba(27, 25, 20, 0.5);
+}
+.price-sku {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 0.45rem;
+}
+.price-amount {
+  font-family: Georgia, "Iowan Old Style", Palatino, serif;
+  font-size: clamp(2.1rem, 5vw, 2.85rem);
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.85rem;
+}
+.price-amount span {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--mut);
+  letter-spacing: 0;
+}
+.price-note {
+  color: var(--mut);
+  margin-bottom: 1.25rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
