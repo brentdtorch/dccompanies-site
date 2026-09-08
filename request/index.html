@@ -6,9 +6,9 @@
   <meta name="referrer" content="origin" />
   <title>Request services — DC Companies</title>
   <meta name="description" content="Request services from DC Companies LLC. Tell us the unit, location, timeline, and the real ask. We reply from brent@dccompanies.net." />
-  <meta name="theme-color" content="#161410" />
+  <meta name="theme-color" content="#080c12" />
   <link rel="stylesheet" href="/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23b34a22'/><text x='50' y='70' font-size='56' font-family='Georgia' font-weight='bold' text-anchor='middle' fill='%23fffdf8'>DC</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23080c12' stroke='%233ee0d0' stroke-width='6'/><text x='50' y='68' font-size='48' font-family='Georgia' font-weight='bold' text-anchor='middle' fill='%233ee0d0'>DC</text></svg>" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -22,10 +22,11 @@
       <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span></label>
       <nav class="nav-links" aria-label="Primary">
         <a href="/">Home</a>
+        <a href="/ai.html">AI</a>
         <a href="/#units">Units</a>
         <a href="/mv-sales.html">MV Sales</a>
         <a href="/parley.html">Parley</a>
-        <a href="/request.html" class="nav-cta">Request services</a>
+        <a href="/request.html" class="nav-cta" aria-current="page">Request services</a>
       </nav>
     </div>
   </header>
@@ -37,7 +38,7 @@
         <h1>Request <span class="accent">services</span></h1>
         <p class="lede">
           Capture the real request. We route it with context and reply from
-          <a href="mailto:brent@dccompanies.net" style="color:#e8b297;text-decoration:underline">brent@dccompanies.net</a>.
+          <a href="mailto:brent@dccompanies.net" class="accent" style="text-decoration:underline">brent@dccompanies.net</a>.
         </p>
       </div>
     </section>
@@ -91,10 +92,10 @@
                 <label for="unit">Unit / service <span class="req" aria-hidden="true">*</span></label>
                 <select id="unit" name="Unit" required>
                   <option value="" disabled selected>Select a unit</option>
+                  <option value="AI Business Solutions">AI Business Solutions</option>
                   <option value="Custom Application Development">Custom Application Development</option>
                   <option value="Project Management &amp; Project Controls">Project Management &amp; Project Controls</option>
                   <option value="Industrial Small Tool &amp; Consumable Drop Shipping">Industrial Small Tool &amp; Consumable Drop Shipping</option>
-                  <option value="AI Business Solutions">AI Business Solutions</option>
                   <option value="MV Sales">MV Sales</option>
                   <option value="Other">Other</option>
                 </select>
@@ -141,6 +142,7 @@
         </div>
         <nav class="footer-nav" aria-label="Footer">
           <a href="/">Home</a>
+          <a href="/ai.html">AI</a>
           <a href="/#units">Units</a>
           <a href="/request.html">Request services</a>
           <a href="/mv-sales.html">MV Sales</a>
@@ -182,8 +184,8 @@
         mv: "MV Sales",
         other: "Other"
       };
-      var preset = params.get("unit");
-      if (preset && unit) {
+      var preset = params.get("unit") || "ai";
+      if (unit) {
         var mapped = slugs[preset] || preset;
         for (var i = 0; i < unit.options.length; i++) {
           if (unit.options[i].value === mapped || unit.options[i].text === mapped) {
